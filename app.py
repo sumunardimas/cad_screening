@@ -22,10 +22,10 @@ with open(filename_to_load, "rb") as readFile:
 external_stylesheets = ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css']
 
 app = dash.Dash("apex", external_stylesheets=external_stylesheets)
+server = app.server
 
 app.layout = layout.app_html_layout
 
-# Classification Button
 @app.callback(     
     Output(component_id='classification-result', component_property='children'),
     [Input(component_id='submit', component_property='n_clicks')],

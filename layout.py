@@ -6,7 +6,7 @@ import pandas as pd
 
 app_html_layout = html.Div([
 
-    html.Img(src='https://cdn-icons-png.flaticon.com/128/2589/2589175.png'),
+    html.Img(src='https://carenusa.id/img/apex.png', style={'height':'75px', 'margin':'auto', 'textAlign': 'center'}),
 
     html.Center(html.H1("Screening for Patient at Risk for CHD")),
 
