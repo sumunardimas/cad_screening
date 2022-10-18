@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import layout
 import dash
+import flask
 from dash.dependencies import Input, Output, State
 from pathlib import Path
 import numpy as np
@@ -22,7 +23,7 @@ with open(filename_to_load, "rb") as readFile:
 external_stylesheets = ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css']
 
 app = dash.Dash("apex", external_stylesheets=external_stylesheets)
-server = app.server
+server = flask.Flask(app)
 
 app.layout = layout.app_html_layout
 
