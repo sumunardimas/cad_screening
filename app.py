@@ -23,7 +23,8 @@ with open(filename_to_load, "rb") as readFile:
 external_stylesheets = ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css']
 
 app = dash.Dash("apex", external_stylesheets=external_stylesheets)
-server = flask.Flask(app)
+
+server = app.server
 
 app.layout = layout.app_html_layout
 
