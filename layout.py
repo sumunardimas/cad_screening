@@ -5,10 +5,10 @@ from dash import dcc
 import pandas as pd
 
 app_html_layout = html.Div([
+    
+    html.Center(html.Img(src='https://carenusa.id/img/apex.png', style={'height':'75px','margin-right':'50%', 'margin-left':'40%', 'textAlign': 'center'})),
 
-    html.Img(src='https://carenusa.id/img/apex.png', style={'height':'75px', 'margin':'auto', 'textAlign': 'center'}),
-
-    html.Center(html.H1("Screening for Patient at Risk for CHD")),
+    html.Center(html.H1("Screening for Patient at Risk for CAD")),
 
     html.Center(html.Div("Insert patient details in the following fields. Once you have succesfully fill in the fields, click the button to display the prediction results")),
     html.Table([ html.Tbody([
