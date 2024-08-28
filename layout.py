@@ -8,7 +8,7 @@ app_html_layout = html.Div([
     
     html.Center(html.Img(src='', style={'height':'75px','margin-right':'50%', 'margin-left':'40%', 'textAlign': 'center'})),
 
-    html.Center(html.H1("Skrining Risiko Penyakit Jantung Koronerz")),
+    html.Center(html.H1("Skrining Risiko Penyakit Jantung Koroner")),
 
     html.Center(html.Div("Masukkan data pasien berdasarkan kolom yang tersedia!")),
     html.Table([ html.Tbody([
@@ -115,13 +115,13 @@ app_html_layout = html.Div([
             ]),
 
         html.Tr([
-        html.Td( html.B('Jumlah pembuluh darah utama dengan fluoroskopi:'), style={'width':'25%'} ),
+        html.Td( html.B('Jumlah pembuluh darah utama dengan fluoroskopi (0-3):'), style={'width':'25%'} ),
         html.Td( dcc.Input(id='ca', type='number'
             ), style={'width':'55%'} ),
         ]),
 
         html.Tr([
-        html.Td( html.B('Depresi ST disebabkan oleh aktivitas dibandingkan istirahat:'), style={'width':'25%'} ),
+        html.Td( html.B('ST (Nilai numerik diukur dalam depresi)'), style={'width':'25%'} ),
         html.Td( dcc.Input(id='oldpeak', type='number'
             ), style={'width':'55%'} ),
         ]),
