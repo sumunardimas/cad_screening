@@ -57,8 +57,8 @@ def execute_classification(n_clicks, age, sex, cp, trestbps, chol, fbs, restecg,
 
         prediction = loaded_model.predict(sample)
 
-        prediction_labels = ["Not at risk for CAD", "At risk for CAD"]
-        return "The predicted state for the patient is "+ str(prediction[0]) +"-" + prediction_labels[prediction[0]]
+        prediction_labels = ["tidak berisiko menderita Penyakit Jantung Koroner", "berisiko menderita Penyakit Jantung Koroner. Segera lakukan pemeriksaan lanjutan untuk mengkonfirmasi hasil skrining!."]
+        return "Pasien "+ prediction_labels[prediction[0]]
 
 
 if __name__ == "__main__":
